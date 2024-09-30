@@ -167,6 +167,9 @@ screens = [
                 # NB Systray is incompatible with Wayland, consider using StatusNotifier instead
                 # widget.StatusNotifier(),
                 widget.Systray(),
+                widget.Battery(foreground='247052', low_percentage=0.20,
+                               low_foreground='fa5e5b', update_delay=10,
+                               format='{percent:.0%}'),
                 widget.Clock(format="%I:%M %p"),
                 #widget.QuickExit(),
             ],
